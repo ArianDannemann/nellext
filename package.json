@@ -2,11 +2,12 @@
     "name": "nellext",
     "displayName": "nellext",
     "description": "language support for nell",
+    "publisher": "ArianDannemann",
     "repository": {
         "type": "git",
         "url": "https://github.com/ArianDannemann/nellext"
     },
-    "version": "0.0.1",
+    "version": "1.0.0",
     "engines": {
         "vscode": "^1.66.0"
     },
