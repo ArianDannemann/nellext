@@ -10,14 +10,22 @@
 		},
 		{
 			"include": "#comment"
+		},
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "#variables"
 		}
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.nell",
-				"match": "\\b(input|and|or|xor|nand|not|signal|show)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "keyword.control.nell",
+					"match": "\\b(input|and|or|xor|nand|not|signal|show)\\b"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.nell",
@@ -35,6 +43,22 @@
 				{
 					"name": "comment.line.double-dash.nell",
 					"match": "#.*$"
+				}
+			]
+		},
+		"constants": {
+			"patterns": [
+				{
+					"name": "constant.language.nell",
+					"match": " (\\w*)\\n"
+				}
+			]
+		},
+		"variables": {
+			"patterns": [
+				{
+					"name": "variable.language.nell",
+					"match": "\\b(\\w+)\\b"
 				}
 			]
 		}
