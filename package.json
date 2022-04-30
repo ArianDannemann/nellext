@@ -1,0 +1,25 @@
+{
+    "name": "nellext",
+    "displayName": "nellext",
+    "description": "language support for nell",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.66.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "nell",
+            "aliases": ["nell", "nell"],
+            "extensions": [".nell"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "nell",
+            "scopeName": "source.nell",
+            "path": "./syntaxes/nell.tmLanguage.json"
+        }]
+    }
+}
